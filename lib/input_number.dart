@@ -11,13 +11,13 @@ class InputNumber extends StatefulWidget {
       {super.key,
       this.decimalDigits = 0,
       this.precedingDigits = 8,
-      this.min = 0,
-      this.max = 0});
+      this.min,
+      this.max});
 
   final int decimalDigits;
   final int precedingDigits;
-  final double min;
-  final double max;
+  final double? min;
+  final double? max;
 
   @override
   State<InputNumber> createState() => _InputNumberState();

@@ -55,25 +55,26 @@ class ExamplePageState extends State<ExamplePage> {
               keyboardType: const TextInputType.numberWithOptions(
                   decimal: false, signed: false),
             ),
+            // const InputNumber(
+            //   decimalDigits: 0,
+            //   // isLimit: true,
+            //   // min: 0,
+            //   // max: 10000,
+            // ),
+            // const InputNumber(
+            //   decimalDigits: 2,
+            //   precedingDigits: 5,
+            //   // isLimit: true,
+            //   // min: 0,
+            //   // max: 10000,
+            // )
+            // ,
             const InputNumber(
               decimalDigits: 0,
-              // isLimit: true,
-              // min: 0,
-              // max: 10000,
-            ),
-            const InputNumber(
-              decimalDigits: 2,
               precedingDigits: 5,
               // isLimit: true,
-              // min: 0,
-              // max: 10000,
-            ),
-            const InputNumber(
-              decimalDigits: 0,
-              precedingDigits: 5,
-              // isLimit: true,
-              // min: 3,
-              max: 50000,
+              min: 3,
+              // max: 50000,
             ),
             TextFormField()
           ],
