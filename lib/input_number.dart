@@ -1,7 +1,7 @@
 // import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_form/numberical_range_formatter.dart';
+import 'package:flutter_form/numerical_range_formatter.dart';
 import 'package:intl/intl.dart';
 
 import 'thousands_seperator_input_formatter.dart';

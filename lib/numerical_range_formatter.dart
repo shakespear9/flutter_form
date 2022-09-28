@@ -11,14 +11,19 @@ class NumericalRangeFormatter extends TextInputFormatter {
     TextEditingValue oldValue,
     TextEditingValue newValue,
   ) {
+    final isMinOn = min > 0;
+    final isMaxOn = max > 0;
     final String newNumber = newValue.text.replaceAll(",", "");
 
     if (newNumber == '') {
       return newValue;
-    } else if (double.parse(newNumber) < min) {
+    } else if (isMinOn && double.parse(newNumber) < min) {
       return const TextEditingValue().copyWith(text: min.toString());
+    } else if (isMaxOn && double.parse(newNumber) > max) {
+      // return double.parse(newNumber) > max ? oldValue : newValue;
+      return oldValue;
     } else {
-      return double.parse(newNumber) > max ? oldValue : newValue;
+      return newValue;
     }
   }
 }

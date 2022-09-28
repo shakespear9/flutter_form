@@ -67,7 +67,15 @@ class ExamplePageState extends State<ExamplePage> {
               // isLimit: true,
               // min: 0,
               // max: 10000,
-            )
+            ),
+            const InputNumber(
+              decimalDigits: 0,
+              precedingDigits: 5,
+              // isLimit: true,
+              // min: 3,
+              max: 50000,
+            ),
+            TextFormField()
           ],
         ));
   }
